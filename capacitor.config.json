@@ -1,0 +1,26 @@
+{
+  "appId": "com.rekreativa.app",
+  "appName": "Rekreativa",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true,
+    "allowNavigation": ["*"]
+  },
+  "plugins": {
+    "Camera": {
+      "permissions": ["android.permission.CAMERA"]
+    },
+    "Geolocation": {
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    }
+  },
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true
+  }
+}
